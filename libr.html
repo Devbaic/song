@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: azure;
+        }
+
+        .container {
+            width: 250px;
+            height: 390px;
+            background-color: rgb(77, 75, 75);
+            border-radius: 10px;
+
+        }
+
+        .box img {
+            width: 200px;
+            height: 200px;
+            margin: 1.5rem;
+            border-radius: 50%;
+            transition: transform 0.5s ease-in-out;
+            border: none;
+            cursor: pointer;
+            border: 1px solid white;
+animation: move 0.s infinite forwards;
+
+
+        }
+@keyframes move{
+   to{
+     transform: rotate(360deg);
+   }
+}
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 1rem;
+            transition: color 0.5s ease-in-out;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            bottom: 2rem;
+            color: white;
+        }
+
+        audio {
+            width: 200px;
+            position: relative;
+            left: 1.4rem;
+            bottom: 1rem;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="./OIP.jfif" alt="">
+            <div></div>
+            <p>BIRDS OF THE FEATHER</p>
+            <audio controls>
+                <source src="./Billie_Eilish_-_BIRDS_OF_A_FEATHER_(Official_Music_Video)_[_YouConvert.net_].mp3">
+            </audio>
+        </div>
+       
+    </div>
+    
+</body>
+
+</html>
